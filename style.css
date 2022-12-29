@@ -1,0 +1,359 @@
+@font-face {
+  font-family: 'Barlow-medium';
+  src: url(./fonts/Barlow-Medium.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Barlow-regular';
+  src: url(./fonts/Barlow-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Barlow-light';
+  src: url(./fonts/Barlow-light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Barlow-thin';
+  src: url(./fonts/Barlow-thin.otf) format('opentype');
+}
+
+body {
+  background-color: #eff6ff;
+  margin: 95px 70px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  max-width: 145px;
+  margin: 50px 50px;
+}
+
+section {
+  display: block;
+  max-width: 680px;
+  width: 100%;
+  padding: 95px 70px;
+  font-size: 32px;
+  display: flex !important;
+  flex-direction: column;
+  background-color: white;
+}
+
+.title {
+  font-family: 'Barlow-regular';
+  color: #2a4a5c;
+  display: grid;
+}
+
+.title span {
+  font-family: 'Barlow-regular';
+  color: #2a4a5c;
+  margin-top: 20px;
+  font-size: 22px;
+  opacity: 0.6;
+}
+
+.register-buttons {
+  font-family: 'Barlow-regular';
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.register_button-Facebook {
+  height: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  background-color: #255a9b;
+}
+
+.register_button-LinkedIn {
+  height: 50px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  background-color: #0076b6;
+}
+
+.register-space {
+  max-width: 280px;
+  width: 100%;
+  font-family: 'Barlow-regular';
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 25%;
+  margin: 50px 0;
+}
+
+.register-space span {
+  max-width: 125px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  opacity: 0.1;
+}
+
+.register-mail_phone {
+  font-family: 'Barlow-regular';
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-mail_phone div {
+  max-width: 250px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 12px;
+  padding-top: 5px;
+  position: relative;
+}
+
+.register-mail_phone span {
+  font-size: 16px;
+  opacity: 0.4;
+
+  position: absolute;
+}
+
+.register_mail__input {
+  padding-top: 25px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.register_mail {
+  transition: 1s;
+}
+
+.register_mail:hover {
+  border-left: 1px solid #3698fb;
+  border-radius: 0 5px 0 0;
+  transition: 1s;
+}
+
+.register_phone__input {
+  padding-top: 25px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.register_phone {
+  transition: 1s;
+}
+
+.register_phone:hover {
+  border-left: 1px solid #3698fb;
+  border-radius: 0 5px 0 0;
+  transition: 1s;
+}
+
+.type {
+  font-family: 'Barlow-regular';
+  color: #2a4a5c;
+  display: grid;
+
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.type span {
+  font-family: 'Barlow-regular';
+  color: #2a4a5c;
+  margin-top: 14px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.type ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+.type ul li {
+  max-width: 115px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* display: flex;
+  
+  justify-content: space-between; */
+}
+
+#type_check {
+  margin-top: 3px;
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  /* transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1); */
+}
+
+#type_check:checked {
+  border: 3px solid #3698fb;
+}
+
+#type_check::before {
+  opacity: 1;
+}
+
+#type_check__2 {
+  margin-top: 3px;
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  /* transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1); */
+}
+
+#type_check__2:checked {
+  border: 3px solid #3698fb;
+}
+
+#type_check__2::before {
+  opacity: 1;
+}
+
+#type_check__3 {
+  margin-top: 3px;
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  /* transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1); */
+}
+
+#type_check__3:checked {
+  border: 3px solid #3698fb;
+}
+
+#type_check__3::before {
+  opacity: 1;
+}
+
+#type_check__4 {
+  margin-top: 3px;
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  /* transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1); */
+}
+
+#type_check__4:checked {
+  border: 3px solid #3698fb;
+}
+
+#type_check__4::before {
+  opacity: 1;
+}
+
+.type_check-name {
+  display: flex;
+  align-items: center;
+  font-family: 'Barlow-regular';
+  font-size: 17px !important;
+}
+
+.type_check-name span {
+  font-family: 'Barlow-medium';
+  color: black;
+  font-size: 17px !important;
+  margin: 0 5px;
+}
+
+.type_checkbox__hidden {
+  font-family: 'Barlow-regular';
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  font-size: 14px !important;
+  width: 200px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0px 0px 12px -8px #000000;
+  padding: 8px 13px;
+  opacity: 0 !important;
+  transition: 0.5s;
+}
+
+#type_check:checked ~ .type_checkbox__hidden {
+  opacity: 1 !important;
+}
+
+.type_check-agree {
+  display: flex;
+  align-items: center;
+  font-family: 'Barlow-regular';
+  font-size: 15px !important;
+  margin-left: 10px;
+}
+
+.type_check-agree p a {
+  color: #3698fb;
+  text-decoration: underline;
+  opacity: 1 !important;
+}
+
+.register_btn {
+  font-family: 'Barlow-regular';
+  font-size: 15px;
+  width: 230px;
+  height: 45px;
+  border-radius: 5px;
+  margin-top: 50px;
+  position: relative;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3698fb;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.register_btn:hover {
+  color: #3698fb;
+  background-color: white;
+  border: 1px solid #3698fb;
+}
